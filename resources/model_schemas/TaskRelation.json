@@ -1,0 +1,6 @@
+{
+  "name": "user_id",
+  "dbType": "integer:unsigned:foreign,users,id",
+  "htmlType": "text",
+  "relation": "1tm,User,user_id,id"
+}

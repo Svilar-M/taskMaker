@@ -1,0 +1,6 @@
+{
+  "name": "task_id",
+  "dbType": "integer:unsigned:foreign,tasks,id",
+  "htmlType": "text",
+  "relation": "mt1,Task,task_id,id"
+}
