@@ -20,9 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('tasks', 'TaskController');
-
-Route::resource('tasks', 'TaskController');
-
-Route::resource('tasks', 'TaskController');
-
 Route::resource('categories', 'CategoryController');

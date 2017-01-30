@@ -11,7 +11,9 @@ class TaskRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'php'
+        'title',
+        'body',
+        'status'
     ];
 
     /**

@@ -1,12 +1,16 @@
 <table class="table table-responsive" id="tasks-table">
     <thead>
-        <th>Php</th>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Status</th>
         <th colspan="3">Action</th>
     </thead>
     <tbody>
     @foreach($tasks as $task)
         <tr>
-            <td>{!! $task->php !!}</td>
+            <td>{!! $task->title !!}</td>
+            <td>{!! $task->body !!}</td>
+            <td>{!! $task->status !!}</td>
             <td>
                 {!! Form::open(['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>

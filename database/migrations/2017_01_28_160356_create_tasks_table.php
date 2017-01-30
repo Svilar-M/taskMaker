@@ -18,6 +18,8 @@ class CreateTasksTable extends Migration
             $table->text('title');
             $table->text('body');
             $table->integer('status');
+//            $table->integer('category_id')->unsigned();
+//            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
             $table->softDeletes();
         });

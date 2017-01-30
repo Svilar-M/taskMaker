@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Category
  * @package App\Models
- * @version January 28, 2017, 7:28 pm UTC
+ * @version January 30, 2017, 4:15 pm UTC
  */
 class Category extends Model
 {
@@ -16,6 +16,9 @@ class Category extends Model
 
     public $table = 'categories';
     
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'updated_at';
+
 
     protected $dates = ['deleted_at'];
 
@@ -30,6 +33,7 @@ class Category extends Model
      * @var array
      */
     protected $casts = [
+        'id' => 'integer',
         'name' => 'string'
     ];
 

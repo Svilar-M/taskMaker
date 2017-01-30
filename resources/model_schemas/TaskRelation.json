@@ -1,6 +1,6 @@
 {
-  "name": "user_id",
-  "dbType": "integer:unsigned:foreign,users,id",
+  "name": "category_id",
+  "dbType": "integer:unsigned:foreign,category,id",
   "htmlType": "text",
-  "relation": "1tm,User,user_id,id"
+  "relation": "1tm,Category,category_id,id"
 }

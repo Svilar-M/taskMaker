@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class Task
  * @package App\Models
- * @version January 28, 2017, 7:01 pm UTC
+ * @version January 30, 2017, 3:56 pm UTC
  */
 class Task extends Model
 {
@@ -16,12 +16,17 @@ class Task extends Model
 
     public $table = 'tasks';
     
+    const CREATED_AT = 'created_at';
+    const UPDATED_AT = 'updated_at';
+
 
     protected $dates = ['deleted_at'];
 
 
     public $fillable = [
-        'php'
+        'title',
+        'body',
+        'status'
     ];
 
     /**
@@ -30,7 +35,10 @@ class Task extends Model
      * @var array
      */
     protected $casts = [
-        
+        'id' => 'integer',
+        'title' => 'string',
+        'body' => 'string',
+        'status' => 'integer'
     ];
 
     /**

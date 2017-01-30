@@ -1,4 +1,20 @@
+<!-- Title Field -->
+<div class="form-group col-sm-12 col-lg-12">
+    {!! Form::label('title', 'Title:') !!}
+    {!! Form::textarea('title', null, ['class' => 'form-control']) !!}
+</div>
 
+<!-- Body Field -->
+<div class="form-group col-sm-12 col-lg-12">
+    {!! Form::label('body', 'Body:') !!}
+    {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Status Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('status', 'Status:') !!}
+    {!! Form::number('status', null, ['class' => 'form-control']) !!}
+</div>
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">

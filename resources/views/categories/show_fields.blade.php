@@ -22,3 +22,9 @@
     <p>{!! $category->updated_at !!}</p>
 </div>
 
+<!-- Deleted At Field -->
+<div class="form-group">
+    {!! Form::label('deleted_at', 'Deleted At:') !!}
+    <p>{!! $category->deleted_at !!}</p>
+</div>
+
